@@ -1,8 +1,8 @@
 //feature 1
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
-  let temperature = Math.round(response.data.temperature.current);
-  temperatureElement.innerHTML = response.data.temperature.current;
+  let temperature = response.data.temperature.current;
+  temperatureElement.innerHTML = Math.round(temperature);
   let cityElement = document.querySelector("#current-city");
   cityElement.innerHTML = response.data.city;
 }
